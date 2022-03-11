@@ -21,4 +21,60 @@ body header a {
   text-decoration: none;
   padding: 15px;
   display: block;
+  text-transform: uppercase;
+}
+
+main section#card {
+  background: #fff;
+  padding: 20px;
+  margin: 1em auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 80%;
+}
+main section#card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main section#card ul li {
+  margin-bottom: 10px;
+}
+main section#card ul li span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ccdfff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+main section#card ul li strong {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+main section#primary {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+main section#primary h1 {
+  font-size: 3em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+main section#primary p {
+  font-size: 1.4em;
+}
+main section#primary a {
+  color: #001333;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #fff6bb;
+  display: block;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  padding: 15px;
 }/*# sourceMappingURL=main.css.map */
