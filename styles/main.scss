@@ -2,6 +2,11 @@ $colors: (
   primary: #005dff,
   accent: #fff6bb,
 );
+$padding: 15px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
 
 body,
 html {
@@ -13,10 +18,18 @@ body {
   margin: 0;
 
   #bg {
-    background-color: map-get($map: $colors, $key: primary);
+    clip-path: polygon(100% 0, 100% 71%, 39% 100%, 0 100%, 0 0);
+    background-color: color(primary);
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
+  }
+
+  header a {
+    color: #fff;
+    text-decoration: none;
+    padding: $padding;
+    display: block;
   }
 }

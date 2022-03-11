@@ -8,9 +8,17 @@ body {
   margin: 0;
 }
 body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 71%, 39% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 71%, 39% 100%, 0 100%, 0 0);
   background-color: #005dff;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
+}
+body header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
