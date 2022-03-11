@@ -16,6 +16,12 @@ body #bg {
   position: absolute;
   z-index: -1;
 }
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 75% 0, 56% 100%, 0 100%);
+            clip-path: polygon(0 0, 75% 0, 56% 100%, 0 100%);
+  }
+}
 body header a {
   color: #fff;
   text-decoration: none;
@@ -24,6 +30,13 @@ body header a {
   text-transform: uppercase;
 }
 
+@media (min-width: 840px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "primary card";
+  }
+}
 main section#card {
   background: #fff;
   padding: 20px;
@@ -31,6 +44,16 @@ main section#card {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   width: 80%;
+}
+@media (min-width: 840px) {
+  main section#card {
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-self: center;
+    margin: 1em;
+  }
 }
 main section#card ul {
   list-style: none;
@@ -58,10 +81,24 @@ main section#primary {
   padding: 15px;
   text-align: center;
 }
+@media (min-width: 840px) {
+  main section#primary {
+    grid-area: primary;
+    text-align: left;
+    margin: 4em 0 0 4em;
+  }
+}
 main section#primary h1 {
   font-size: 3em;
   margin-top: 10px;
   text-transform: uppercase;
+}
+@media (min-width: 840px) {
+  main section#primary h1 {
+    width: 30%;
+    font-size: 4em;
+    line-height: 0.9em;
+  }
 }
 main section#primary p {
   font-size: 1.4em;
@@ -77,4 +114,10 @@ main section#primary a {
   text-align: center;
   margin: 50px auto 0 auto;
   padding: 15px;
+}
+@media (min-width: 840px) {
+  main section#primary a {
+    display: inline-block;
+    padding: 15px 60px;
+  }
 }/*# sourceMappingURL=main.css.map */
